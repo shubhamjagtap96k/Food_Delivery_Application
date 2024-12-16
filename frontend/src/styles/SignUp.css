@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+ 
+  /* Container for the Signup form */
+  .signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    position: relative;
+  }
+ 
+  .signup-form-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .signup-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+ 
+  .signup-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+ 
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .form-group {
+    margin-bottom: 15px;
+  }
+ 
+  .form-control {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+ 
+  .form-control::placeholder {
+    color: #aaa;
+  }
+ 
+  .password-group {
+    position: relative;
+  }
+ 
+  .password-toggle {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+  }
+ 
+  .btn-submit {
+    background-color: #ff5e62;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  .btn-submit:hover {
+    background-color: #e14e50;
+  }
+ 
+  .alert {
+    color: #e14e50;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+ 
+  .social-login {
+    margin-top: 20px;
+  }
+ 
+  .social-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  .btn-social {
+    background: none;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+ 
+  .btn-social:hover {
+    background-color: #f0f0f0;
+  }
+ 
+  .btn-facebook { border-color: #3b5998; }
+  .btn-twitter { border-color: #1da1f2; }
+  .btn-google { border-color: #db4437; }
+ 
+  .signin-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+ 
+  .link-login {
+    color: #007bff;
+    text-decoration: underline;
+  }

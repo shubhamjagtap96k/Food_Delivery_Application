@@ -1,0 +1,166 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #e67e22; /* Orange color matching the theme */
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+/* Circular logo */
+.navbar-logo {
+  height: 50px; /* Adjusted logo size */
+  width: 50px; /* Make logo a perfect circle */
+  border-radius: 50%; /* Circular shape */
+  margin-right: 20px;
+  object-fit: cover; /* Ensures the logo maintains its aspect ratio */
+}
+
+/* Navbar title styling */
+.navbar-title {
+  font-size: 36px; /* Larger font size for better visibility */
+  margin: 0;
+  font-weight: bold; /* Make title bold */
+  font-family: 'Roboto', sans-serif; /* Modern font family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth with shadow */
+  letter-spacing: 2px; /* Slightly increased letter spacing for a more spacious look */
+  position: relative;
+  display: inline-block;
+}
+
+/* Adding a creative underline */
+.navbar-title::after {
+  content: ''; /* Empty content for pseudo-element */
+  display: block;
+  width: 100%;
+  height: 4px; /* Thickness of the underline */
+  background: linear-gradient(90deg, #fff, #f9a825, #fff); /* Gradient effect for underline */
+  position: absolute;
+  bottom: -8px; /* Position the underline below the text */
+  left: 0;
+  transform: scaleX(0); /* Start with 0 scale */
+  transform-origin: bottom right; /* Underline grows from right to left */
+  transition: transform 0.3s ease; /* Smooth transition for the underline effect */
+}
+
+/* Hover effect for the title */
+.navbar-title:hover::after {
+  transform: scaleX(1); /* Full scale underline on hover */
+  transform-origin: bottom left; /* Underline grows from left to right */
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #ff5e62;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: #e14e50;
+}
+
+/* Main dashboard styling */
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+}
+
+/* Container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.admin-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px; /* Uniform width for all cards */
+  height: 150px; /* Increased height for more content space */
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Adjust content and title within the card */
+.admin-card h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0; /* Remove bottom margin to keep the title centered */
+}
+
+/* Remove underline from card links */
+.admin-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover effects for cards */
+.admin-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Ensure link text is not underlined */
+.under {
+  text-decoration: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 28px; /* Slightly smaller font size on smaller screens */
+  }
+  .navbar-logo {
+    height: 40px; /* Adjust logo size on smaller screens */
+    width: 40px;
+  }
+  .admin-card {
+    width: 100%; /* Full width cards on smaller screens */
+    max-width: 400px; /* Maximum width to maintain a good look */
+  }
+}

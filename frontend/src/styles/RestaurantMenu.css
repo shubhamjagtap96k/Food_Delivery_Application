@@ -1,0 +1,84 @@
+.restaurant-menu {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+ 
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+ 
+  .menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+ 
+  .menu-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+ 
+  .menu-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #000;
+  }
+ 
+  .menu-item p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #000;
+  }
+ 
+  .menu-item .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000;
+  }
+ 
+  .add-button {
+    background-color: #ffb347; /* Light orange */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+  }
+ 
+  .add-button:hover {
+    background-color: #ff8c00; /* Darker orange */
+    transform: scale(1.05);
+  }
+ 
+  .no-items {
+    font-size: 1.2em;
+    text-align: center;
+    color: #666;
+  }

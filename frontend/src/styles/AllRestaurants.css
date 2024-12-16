@@ -1,0 +1,72 @@
+/* Container styling */
+.all-restaurants {
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Consistent font with the rest of the application */
+}
+
+/* Title styling */
+.all-restaurants h1 {
+  font-size: 36px; /* Large font size for prominence */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #e67e22; /* Match the theme color */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 30px; /* Space below the title */
+  font-family: 'Roboto', sans-serif; /* Modern font family */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Space above the table */
+}
+
+/* Table headers */
+th {
+  background-color: #f4f4f4; /* Light grey background for headers */
+  color: #333; /* Dark text color for contrast */
+  padding: 12px; /* Increased padding for better readability */
+  text-align: left; /* Align text to the left */
+  font-weight: bold; /* Bold text for headers */
+}
+
+/* Table cells */
+td {
+  border: 1px solid #ddd; /* Light border for cells */
+  padding: 12px; /* Increased padding for better readability */
+  text-align: left; /* Align text to the left */
+  color: #555; /* Slightly darker text color for better readability */
+}
+
+/* Table rows */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row colors for better readability */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* No data message */
+td[colspan="6"] {
+  text-align: center; /* Center-align the no data message */
+  color: #777; /* Grey color for the no data message */
+  padding: 20px; /* Padding for better spacing */
+}
+
+/* Button styling */
+button {
+  background-color: #e67e22; /* Orange color matching the theme */
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Slightly larger padding */
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for the button */
+  font-size: 14px; /* Font size for better readability */
+}
+
+button:hover {
+  background-color: #d45d0f; /* Darker shade of orange for hover effect */
+}

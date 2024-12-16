@@ -1,0 +1,89 @@
+/* Container styling */
+.registration-form-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif; /* Consistent font with the rest of the application */
+}
+
+/* Title styling */
+.registration-form-container h1 {
+  font-size: 36px; /* Large font size for prominence */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #e67e22; /* Match the theme color */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 30px; /* Space below the title */
+  font-family: 'Roboto', sans-serif; /* Modern font family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px; /* Space between form elements */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold; /* Bold labels */
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Delivery areas styling */
+.delivery-area-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between delivery area inputs */
+}
+
+.delivery-area-group input {
+  flex: 1;
+  margin-right: 10px; /* Space between input and remove button */
+}
+
+.add-area-btn, .remove-area-btn {
+  background-color: #e67e22; /* Match theme color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.remove-area-btn {
+  background-color: #d32f2f; /* Red color for remove button */
+}
+
+.add-area-btn:hover, .remove-area-btn:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Submit button styling */
+.btn.btn-full {
+  background-color: #e67e22; /* Match theme color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Larger font size for readability */
+  text-align: center;
+}
+
+.btn.btn-full:hover {
+  background-color: #d45d0f; /* Darker shade of orange for hover effect */
+}
