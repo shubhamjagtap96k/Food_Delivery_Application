@@ -1,0 +1,110 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background: url('../img/back.png') center center/cover no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+  }
+   
+  /* Intro section styling */
+  .intro {
+    text-align: center;
+    max-width: 900px;
+    width: 80%;
+    margin: 0.1px 0px; /* Adjust margins as needed */
+    position: relative;
+    z-index: 1; /* Ensure content is above the background image */
+    padding: 20px; /* Add padding for spacing */
+    color: #fff; /* Ensure text is readable on the background */
+  }
+   
+  /* Logo and text styles here */
+  h1:hover {
+    color: #ff5722; /* Change color on hover */
+  }
+   
+  /* Text animations for h1 only */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1px;
+    color: #fff; /* Ensure text is readable on the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    animation: fadeIn 1s ease-out;
+    transition: color 0.3s ease;
+  }
+   
+  /* Logo styling with border and animation */
+  .intro-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 5px solid #d26328; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 8px; /* Padding inside the border */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for the logo */
+    transition: transform 0.3s ease, filter 0.3s ease, border-color 0.3s ease;
+    animation: bounce 2s infinite; /* Bounce animation */
+  }
+   
+  .intro-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    filter: brightness(1.2); /* Brighten on hover */
+    border-color: #ff8a50; /* Change border color on hover */
+  }
+   
+  /* Keyframes for logo bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+   
+   
+  .search-container {
+    margin: 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .search-input {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(to right, #ff5722, #ff8a50);
+    color: #fff;
+  }
+   
+  .search-input::placeholder {
+    color: #fff;
+  }
+   
+  .search-input:focus {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+  }
+   
+  /* Adjustments for smaller screens */
+   
+  .restaurant-list-container {
+    width: 100%;
+    padding: 20px; /* Ensure there's padding around the restaurant list */
+  }

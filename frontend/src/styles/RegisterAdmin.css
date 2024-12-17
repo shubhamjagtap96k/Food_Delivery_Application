@@ -1,0 +1,72 @@
+/* Container styling */
+.register-admin {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif; /* Consistent font with the rest of the application */
+  background-color: #fff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  border: 1px solid #ddd; /* Light border for the card */
+  margin-top: 40px;
+}
+
+/* Title styling */
+.register-admin h2 {
+  font-size: 36px; /* Large font size for prominence */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #e67e22; /* A blue color for a professional look */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 30px; /* Space below the title */
+  font-family: 'Roboto', sans-serif; /* Modern font family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px; /* Space between form elements */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold; /* Bold labels */
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Submit button styling */
+.btn-submit {
+  background-color: #3498db; /* Blue color for the submit button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Larger font size for readability */
+  text-align: center;
+}
+
+.btn-submit:hover {
+  background-color: #2980b9; /* Darker shade of blue for hover effect */
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c; /* Red color for error messages */
+  font-size: 14px;
+  margin-top: -15px; /* Position error message above the input */
+  margin-bottom: 15px; /* Space below error message */
+}

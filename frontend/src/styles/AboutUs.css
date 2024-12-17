@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+   
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes full height */
+  }
+   
+  .footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+    padding: 20px; /* Increased padding for a better look */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+   
+  /* About Us Section Styling */
+  .about-us {
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    opacity: 0; /* Hide initially */
+    transform: translateY(50px); /* Move down initially */
+    animation: fadeInUp 1s ease-out forwards; /* Animation */
+  }
+   
+  /* Header Text Styling */
+  .about-us h2 {
+    font-size: 32px; /* Larger font size for the header */
+    margin-bottom: 20px;
+    color: #060505; /* Black color for better readability */
+    text-align: center; /* Center the text */
+    animation: fadeIn 1s ease-out; /* Animation for heading */
+  }
+   
+  /* Animation for About Us section */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  /* Animation for text */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  /* Sequential Animations for text and images */
+  .about-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Space between images */
+    margin-top: 30px;
+    opacity: 0; /* Hide initially */
+    animation: fadeInUp 1s 0.5s ease-out forwards; /* Animation for images */
+  }
+   
+  .about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+   
+  .about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+   
+  /* Text Styling */
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #120000; /* Black color for text */
+   
+  }
+
+  .about-us {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh; /* Ensure the page takes at least full viewport height */
+  }
+  
+  .about-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
